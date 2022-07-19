@@ -1,0 +1,2 @@
+. Todas las tareas están subidas como proyectos Netbeans, los ficheros .java están en las carpetas src
+. La mayoría de las tareas requieren el uso de algún gestor de base de datos (MYSQL, POSTRESQL, etc)
