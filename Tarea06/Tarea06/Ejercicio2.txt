@@ -1,0 +1,107 @@
+1 Listar el título de todos los libros.
+
+for $x in //libro
+return $x/titulo
+
+2 Listar año y título de todos los libros, ordenados por el año. (Cambie el nombre del atributo año por annio, daba problemas)
+
+for $x in //libro
+order by $x/@annio
+return ($x/titulo , $x/@annio) 
+
+3 Listar los libros cuyo precio sea 65.95
+
+for $x in //libro
+where $x/precio = 65.95
+return $x
+
+4 Listar los libros publicados antes del año 2000
+
+for $x in //libro
+where $x/@annio < 2000
+return ($x/titulo , $x/@annio)
+
+5 Listar año y título de los libros publicados por Addison-Wesley después del año 1992.
+
+for $x in //libro
+where $x/editorial = 'Addison-Wesley' and $x/@annio > 1992
+return ( $x/@annio , $x/titulo ) 
+
+6 Listar año y título de los libros que tienen más de un autor. 
+
+for $x in //libro
+where count($x/autor) > 1
+return ( $x/@annio , $x/titulo ) 
+
+7 Listar año y título de los libros que tienen no tienen autor.
+
+for $x in //libro
+where count($x/autor) = 0
+return ( $x/@annio , $x/titulo ) 
+
+8 Mostrar los apellidos de los autores que aparecen en el documento, sin repeticiones, ordenados alfabéticamente.
+
+for $x in /bib/libro/autor/apellido
+order by $x
+group by $x
+return $x
+
+9 Por cada libro, listar agrupado en un elemento <result> su titulo y autores
+
+for $x in /bib/libro
+return <result> {($x/titulo, $x/autor)} </result>
+
+10 Por cada libro, obtener su título y el número de autores, agrupados en un elemento <libro>
+
+for $x in /bib/libro
+let $numeroAutores:= count($x/autor)
+return <libro> {($x/titulo, <numAutores>{ $numeroAutores } </numAutores>)} </libro>
+
+
+///LISTAR ATRIBUTOS 
+for $id in //bib/libro/@annio
+return xs:string($id)
+
+///A (Simple)
+
+///B  Devuelve el nombre de departamento encerrado entre las etiquetas <tipoA></tipoA>, si es del tipo = A, y <tipoB></tipoB>, si no lo es. 
+
+for $x in //universidad/carreras/carrera
+
+let $nada := "nada"
+
+return if($x/plan = 2003)then <accessoryNum>{data($x)}</accessoryNum> else <otherNum>{data($nada)}</otherNum>
+
+///C  Lista los nombres del departamento y el número de empleados que tiene ese departamento entre etiquetas. 
+
+for $x in //empresa/departamento
+
+let $numEmp := count($x/empleado)
+
+return ($x/nombre/text(), $numEmp)
+
+//D Lista los nombre de los departamentos, los empleados que tiene, la media del salario que tiene y el empleado con salario máximo y su salario.  
+
+
+for $x in //empresa/departamento
+
+let $numEmp := count($x/empleado)
+let $Salmed := avg($x/empleado/salario)
+let $max := max($x/empleado/salario)
+
+let $empleadoMax := (
+
+  for $y in //empresa/departamento/empleado
+
+  where $y/salario = $max
+  
+  return $y
+  
+  )
+
+return ($x/nombre/text(), $numEmp, $Salmed, $max, $empleadoMax)
+
+
+
+
+

@@ -1,0 +1,45 @@
+(: 1. Nombre de la Universidad. :)
+/universidad/nombre
+
+(: 2. País de la Universidad. :)
+/universidad/pais
+
+(: 3. Nombres de las Carreras. :)
+//carrera/nombre
+
+(: 4. Años de plan de estudio de las carreras. :)
+//carrera/plan
+
+(: 5. Nombres de todos los alumnos. :)
+//alumnos/alumno/nombre
+
+(: 6. Identificadores de todas las carreras. :)
+//carrera/@id
+
+(: 7. Datos de la carrera cuyo id es c01. :)
+//carrera[@id='c01']
+
+(: 8. Centro en que se estudia de la carrera cuyo id es c02. :)
+//carrera[@id='c02']/centro
+
+(: 9. Nombre de las carreras que tengan subdirector. :)
+//carrera[subdirector]
+
+(: 10. Nombre de los alumnos que estén haciendo proyecto. :)
+//alumno/estudios[proyecto]/../nombre
+
+(: 11. Códigos de las carreras en las que hay algún alumno matriculado. :)
+//carrera[@id=//alumno/estudios/carrera/@codigo]/@id
+
+(: 12. Apellidos y Nombre de los alumnos con beca. :)
+//alumno[@beca='si']/apellido1 |//alumno[@beca='si']/apellido2 |//alumno[@beca='si']/nombre
+
+(: 13. Nombre de las asignaturas de la titulación c04.:)
+//asignaturas/asignatura[@titulacion='c04']/nombre
+
+(: 14. Nombre de las asignaturas de segundo trimestre.:)
+//asignaturas/asignatura[trimestre='2']/nombre
+
+(: 15. Nombre de las asignaturas que no tienen 4 créditos teóricos. :)
+//asignaturas/asignatura[creditos_teoricos !='4']/nombre
+

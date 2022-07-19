@@ -1,0 +1,20 @@
+Enunciado.
+
+    Crear un nuevo proyecto en NetBeans (MiDbComponent).
+    Crear una clase pojo "actor" con las propiedades: nombre (string), nacionalidad (string) y fechaNacimiento (int).
+    Crea un componente JavaBean (miDbComponent) que gestione el acceso a bases de datos, de tal modo que permita trabajar con BD MySQL y PostgreSQL. 
+    Esta clase deberá tener como mínimo los siguientes métodos:        
+        .SetMode: Permitirá cambiar el SGDB (postgres o mysql)
+        .Connect: Método que recibe por parámetro la URL de la BD, el usuario y la contraseña. Devolverá un tipo boolean que indique si la conexión se ha realizado con éxito.
+        .AddActor: Método que recibe por parámetro un objeto "actor" y añade un nuevo registro a la tabla. Generará un evento que notifique a los oyentes (listeners) el número registros que había antes y después.
+   
+ - Para la gestión de eventos tendrás que añadir la propiedad "ProperyChangeSupport" y los métodos para añadir y eliminar oyentes (listeners)
+   
+    Generar el archivo JAR.
+    Crear un nuevo proyecto en NetBeans (PruebaMiDBComponent)
+    Añadir una Java Main Class
+    Importar el JAR creado anteriormente.
+    Crear una clase que haga oyente ( tendrás que implementar PropertyChangeListener) y presentar por la salida estándar el número de registros antes y después con cada inserción en la tabla "actores".
+    - Instanciar la clase miDBComponet
+    - Añadir como oyente la clase creada anteriormente.
+    - Probar a añadir un nuevo actor tanto en postgres como en mysql

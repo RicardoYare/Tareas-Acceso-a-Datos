@@ -1,0 +1,35 @@
+Enunciado.
+
+Distribuciones Orion S.L. desea almacenar la información referente a las empresas con las que tiene algún tipo de relación comercial.
+Entre los datos que desea almacenar se encuentra el código de la empresa, nombre, teléfonos, calle y número.
+Además si se trata de una empresa cliente se desea almacenar el nivel de fidelidad, el cual puede tomar los valores Bronce, Plata, Oro. 
+Si es una empresa suministradora se desea almacenar el producto que suministra. 
+
+Crear una aplicación en java que cree la BD OR para PostgreSQL y añada la información de la captura adjunta.  
+También deberás crear una función que devuelva el siguiente texto: “La dirección de la empresa # es #calle #número”.
+
+El programa deberá ser capaz de leer la información almacenada en la BD PostGreSQL crear una lista de Objetos Clientes y otra de Proveedores.
+ Mostrar los resultados por pantalla, incluyendo la función.
+
+Añade la funcionalidad de almacenar las listas de objetos que tenemos en memoria en una BDO Neodatis. Mostrar los resultados por pantalla.
+
+Realizar y mostrar en pantalla el resultado de las siguientes consultas en este orden: 
+
+• Código y nombre de los proveedores que tienen como producto “Peras” y tienen la dirección en la calle “Cervantes”. 
+
+• Código y nombre de los clientes que tienen como nivel de fidelidad “Oro” o tienen la dirección en la calle “La Luz”.
+Criterios de puntuación. Total 10 puntos.
+
+Total 10 puntos.
+
+        Crear la BD en PostgreSQL y añadir los datos: 2 puntos.
+
+        Mostrar los datos y resultado de la función en PostgreSQL: 2 puntos. 
+
+        Almacenar y mostrar los datos en Neodatis: 2 puntos. 
+
+        Cada una de las consultas: 1,5 puntos.
+
+        Calidad y fácil lectura del código: 1 punto.
+
+

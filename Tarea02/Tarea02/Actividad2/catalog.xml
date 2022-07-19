@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/Users/Yare/Documents/NetBeansProjects/Actividad2/../../../Downloads/schema.xsd" uri="xml-resources/jaxb/ticketEntrada/schema.xsd"/>
+    <system systemId="file:/C:/Users/Yare/Documents/NetBeansProjects/Actividad2/../../../Downloads/output.xsd" uri="xml-resources/jaxb/ticketSalida/output.xsd"/>
+    <system systemId="file:/C:/Users/Yare/Documents/NetBeansProjects/Actividad2/../../../Desktop/salida.xml" uri="xml-resources/jaxb/ticketSalida/salida.xml.xsd"/>
+    <system systemId="file:/C:/Users/Yare/Documents/NetBeansProjects/Actividad2/../../../Desktop/ticketEntrada.xsd" uri="xml-resources/jaxb/ticketEntrada/ticketEntrada.xsd"/>
+    <system systemId="file:/C:/Users/Yare/Documents/NetBeansProjects/Actividad2/../../../Desktop/ticketSalida.xsd" uri="xml-resources/jaxb/ticketSalida/ticketSalida.xsd"/>
+</catalog>

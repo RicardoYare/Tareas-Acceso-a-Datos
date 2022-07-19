@@ -1,0 +1,42 @@
+Tarea para AD02.
+
+Apartado 1) (5 puntos) Realiza las siguientes acciones utilizando NetBeans:
+
+    Escribe un programa que escriba los 100 primeros números naturales en un archivo numNaturales.txt.
+
+Apartado 2) (5 puntos)
+
+    Partiendo del siguiente documento XML, que como se puede observar se compone de un conjunto de líneas, cada una de las cuales corresponde
+    a un producto, sus unidades y su precio. 
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<ticket>
+
+		<lineas>
+
+			<linea>
+
+				<concepto>Nombre</concepto>
+
+				<unidades>Uds</unidades>
+
+				<precio_unitario>precio</precio_unitario>
+
+			<linea>
+
+		</lineas>
+
+	</ticket>
+
+
+    Se pide desarrollar los siguientes apartados:
+
+      Se debe crear un proyecto Java con JAXB que lea el XSD correspondiente al fichero anterior y genere un XML que a cada línea agregue
+      el elemento <importe></importe> con el valor resultante de multiplicar las unidades por el importe unitario, y que al final de 
+      las líneas agregue el elemento <total></total> con el valor resultante de sumar cada uno de los importes.
+
+    * A tener en cuenta: Si partimos de un fichero xml hay que generar el esquema para poder poder hacer unmarshalling a través de JAXB. 	
+      Para generar el esquema de un fichero XML hay herramientas online que nos facilitarán la tarea. Una de ellas es
+      “https://xml.mherman.org/index.php/trang/generate”.
+

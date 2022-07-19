@@ -1,0 +1,40 @@
+Utilizando la base de datos XML , crear una la colección  ejercicios y en ella sube los documentos universidad.xml y libros.xml.
+Los recursos necesarios para la elaboración de los ejercicios se adjuntan.
+
+EJERCICIO 1.- XPATH (universidad.xml)
+Resuelve las consultas que se plantean y envía el documento de texto con las soluciones :
+1. Nombre de la Universidad.
+2. País de la Universidad.
+3. Nombres de las Carreras.
+4. Años de plan de estudio de las carreras.
+5. Nombres de todos los alumnos.
+6. Identificadores de todas las carreras.
+7. Datos de la carrera cuyo id es c01.
+8. Centro en que se estudia de la carrera cuyo id es c02.
+9. Nombre de las carreras que tengan subdirector.
+10. Nombre de los alumnos que estén haciendo proyecto.
+11. Códigos de las carreras en las que hay algún alumno matriculado.
+12. Apellidos y Nombre de los alumnos con beca.
+13. Nombre de las asignaturas de la titulación c04.
+14. Nombre de las asignaturas de segundo trimestre.
+15. Nombre de las asignaturas que no tienen 4 créditos teóricos.
+
+EJERCICIO 2. XQUERY (libros.xml)
+
+    Listar el título de todos los libros.
+    Listar año y título de todos los libros, ordenados por el año.
+    Listar los libros cuyo precio sea 65.95
+    Listar los libros publicados antes del año 2000
+    Listar año y título de los libros publicados por Addison-Wesley después del año 1992.
+    Listar año y título de los libros que tienen más de un autor.
+    Listar año y título de los libros que tienen no tienen autor.
+    Mostrar los apellidos de los autores que aparecen en el documento, sin repeticiones, ordenados alfabéticamente.
+    Por cada libro, listar agrupado en un elemento <result> su titulo y autores
+    Por cada libro, obtener su título y el número de autores, agrupados en un elemento <libro>
+
+EJERCICIO 3. (utiliza eXist en un programa JAVA).
+Crea un proyecto JAVA que después de conectarse a la base de datos eXist visualice una relación de todos los libros que hay en el fichero libros.xml. Se enviará todo el proyecto comprimido.
+El conector se adjunta al principio de la práctica.
+Criterios de puntuación. Total 10 puntos.
+
+****Para la tarea se uso Exist-xqj

@@ -1,0 +1,27 @@
+Una empresa dispone de una base de datos que contiene las tablas con la información necesaria para su gestión. Las tablas son las siguientes:
+
+    Tabla DEPT que contiene información de los diferentes departamentos que tiene la empresa. La clave principal DEPTNO.
+    Tabla EMP que contiene la información de los diferentes empleados que tiene la empresa. Tiene como clave principal EMPNO 
+    y ajenas DEPTNO que relaciona con la tabla departamentos y MGR que establece la relación con la misma tabla mostrando ser jefe de.
+
+La creación de las tablas y sus relaciones se dan en el fichero que se adjunta.
+
+Realiza un programa en Java utilizando Hibernate como herramienta ORM con la base de datos Mysql con el SQL adjunto e implemente la siguiente funcionalidad:
+
+Realice un CRUD sobre la tabla EMP.
+
+Consultas 
+
+a. Muestra los datos del departamento que tenga el trabajador con salario más alto.
+
+b. Muestra los nombres de los trabajadores que cobran más que un determinado trabajador. Se pasa por parámetro el identificador del trabajador. 
+
+Criterios de puntuación. Total 10 puntos.
+
+        Crear el proyecto usando Hibernate: 2 puntos.
+
+        CRUD tabla trabajador: 3 puntos. 
+
+        Cada una de las consultas: 2 puntos.
+
+        Calidad y fácil lectura del código: 1 punto.

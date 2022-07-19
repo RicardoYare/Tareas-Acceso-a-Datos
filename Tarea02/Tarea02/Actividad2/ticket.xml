@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ticket>
+    <lineas>
+        <linea>
+            <concepto>Pintura</concepto>
+            <precio_unitario>6</precio_unitario>
+            <unidades>9</unidades>
+        </linea>
+        <linea>
+            <concepto>Papel de pared</concepto>
+            <precio_unitario>28</precio_unitario>
+            <unidades>2</unidades>
+        </linea>
+        <linea>
+            <concepto>Disolvente</concepto>
+            <precio_unitario>2</precio_unitario>
+            <unidades>5</unidades>
+        </linea>
+        <linea>
+            <concepto>Cola</concepto>
+            <precio_unitario>11</precio_unitario>
+            <unidades>2</unidades>
+        </linea>
+    </lineas>
+</ticket>

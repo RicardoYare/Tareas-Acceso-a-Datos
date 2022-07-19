@@ -1,0 +1,25 @@
+Global 1 Parte práctica (5 puntos)
+
+Haciendo uso del SGDB eXist, crea una nueva colección llamada "Universidad" y añade el archivo “universidad.xml”. 
+
+Con el cliente eXist de escritorio o el IDE XQuery (web) realiza las siguientes consultas: 
+
+a. Muestra los nombres de los empleados de los departamentos de tipo A, cuyo puesto es Profesor.  
+
+b. Devuelve el nombre de departamento encerrado entre las etiquetas <tipoA></tipoA>, si es del tipo = A, y <tipoB></tipoB>, si no lo es.  
+
+c. Lista los nombres del departamento y el número de empleados que tiene ese departamento entre etiquetas. 
+
+d. Lista los nombre de los departamentos, los empleados que tiene, la media del salario que tiene y el empleado con salario máximo y su salario.  
+
+Realiza un informe donde se muestre cada una de las consultas con una captura de pantalla con el resultado.
+
+Criterios de evaluación:
+
+    Crear colección y añadir el fichero: 0,5 puntos.
+
+    Cada una de las consultas: 1 punto.
+
+    Calidad del informe: 0,5 puntos.
+
+****Para El examen se uso Exist-xqj
